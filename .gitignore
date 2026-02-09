@@ -1,1 +1,34 @@
-/target
+/target/
+# --- Build Artifacts ---
+# The directory where Cargo stores compiled binaries and intermediate build files.
+/target/
+
+# --- IDEs and Editors ---
+# JetBrains (IntelliJ, RustRover)
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+# Except for launch configurations if you want to share them
+# !.vscode/launch.json
+
+# Vim/Emacs swap files
+*~
+*.swp
+
+# --- Environment & Secrets ---
+# Local environment variables (often used with the `dotenv` crate)
+.env
+.env.*
+!.env.example
+
+# --- Documentation ---
+# If you generate local documentation with cargo doc
+/doc/
+
+# --- Testing ---
+# If you use crates that generate coverage reports
+*.gcno
+*.gcda
+/coverage/
